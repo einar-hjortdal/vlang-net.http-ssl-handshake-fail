@@ -12,6 +12,5 @@ docker run \
   --interactive \
   --tty \
   --name=repro \
-  --publish=8080:8080 \
   repro
 ```
