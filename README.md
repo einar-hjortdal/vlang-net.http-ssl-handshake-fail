@@ -9,7 +9,8 @@ sudo reboot
 docker buildx build --tag repro --file Containerfile . --load
 docker run \
   --rm \
-  --detach \
+  --interactive \
+  --tty \
   --name=repro \
   --publish=8080:8080 \
   repro
