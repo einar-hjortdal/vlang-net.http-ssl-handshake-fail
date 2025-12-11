@@ -7,10 +7,5 @@ sudo reboot
 
 # after reboot:
 docker buildx build --tag repro --file Containerfile . --load
-docker run \
-  --rm \
-  --interactive \
-  --tty \
-  --name=repro \
-  repro
+docker run --rm --interactive --tty --name=repro repro
 ```
